@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Polygons;
 
 namespace TestPolygons
 {
@@ -9,9 +10,9 @@ namespace TestPolygons
         [TestMethod]
         public void TestLength()
         {
-            Line line = new Line(new Point(0, 0), new Point(0, 3);
+            Line line = new Line(new Point(0, 0), new Point(0, 3));
             int expectedResult = 3;
-            int actualResult = line.Length();
+            int actualResult = line.GetLength();
             Assert.AreEqual(expectedResult, actualResult);
         }
     }
